@@ -1,0 +1,8 @@
+defaults:
+  - hydra/job_logging: colorlog
+  - hydra/hydra_logging: colorlog
+
+date:  ${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+sampler:
+  _target_: optuna.samplers.RandomSampler
